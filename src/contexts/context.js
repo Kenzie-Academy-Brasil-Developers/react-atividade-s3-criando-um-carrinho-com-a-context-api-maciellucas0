@@ -15,10 +15,9 @@ export const Provider = ({ children }) => {
 
   return (
     <>
-      <CounterContext value={(aumentar, diminuir, conter)}>
+      <CounterContext.Provider value={{ aumentar, diminuir, conter }}>
         {children}
-      </CounterContext>
-      ;
+      </CounterContext.Provider>
     </>
   );
 };
